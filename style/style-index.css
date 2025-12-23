@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.subtitle{
+    text-align: center;
+    color: #9CA3AF;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+    line-height: 19.60px;
+    word-wrap: break-word;
+    margin-bottom: 12px;
+}
+.header-home {
+    margin: 40px auto;
+
+    text-align: center;
+}
+.title{
+    text-align: center;
+    color: #111827;
+    font-size: 32px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 44.80px;
+    word-wrap: break-word
+}
+.text-field-icon{
+    height: 54px;
+    box-sizing: border-box;
+    padding: 12px 32px 12px 52px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgba(255, 255, 255, 1);
+    background: url('../asset/magnifying-glass.png') no-repeat;
+    background-size: 20px;
+    background-position: 20px 50%;
+}
+#text{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+.div-filter{
+    display: flex;
+    margin: 60px auto 0px;
+    flex-wrap: nowrap;
+    width: 71vw;
+    justify-content: space-between;
+    align-items: center;
+}
+.div-bar::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+.div-bar::-webkit-scrollbar-button {
+    width: 1px;
+    height: 1px;
+}
+.div-bar{
+    overflow-x: scroll;
+    display: flex;
+    white-space: nowrap;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+.div-daftar{
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 6px;
+    background: #F1F5F9;
+    color: black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+.btn-sorted{
+    display: flex;
+
+    height: 38px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    border-radius: 6px;
+    border: 1px solid #F1F5F9;
+    background: white;
+}
+.btn-sorted svg{
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+.btn-sorted label{
+    color: black;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+}
+.div-daftar:hover {
+    background-color: black;
+    transition-duration: 0.5s;
+    color: white;
+    cursor:pointer;
+}
+
+.dm-active {
+    background-color: black;
+    color: white;
+}
+.btn-cari{
+    background-color: black;
+    color: white;
+    height: 54px;
+    width: 100px;
+    border-radius: 0px 10px 10px 0px;
+}
+.btn-cari:hover {
+    background-color: rgb(24, 24, 24);
+    transition-duration: 0.5s;
+}
+@media (max-width:1120px) {
+    .div-filter{
+        width: 810px;
+    }
+}
+@media (max-width:1050px) {
+    .div-filter{
+        gap:20px;
+        width: 630px;
+    }
+}
+@media (width > 768px) {
+    .header-home {
+        width: 700px;
+    }
+
+    .text-field-icon {
+        width: 500px;
+    }
+}
+
+@media (width <= 768px) {
+    .header-home {
+        width: 91.146vw;
+    }
+
+    .text-field-icon {
+        width: 65.104vw;
+    }
+}
+
+@media (max-width :700px){
+    .div-filter{
+        width: 83vw;
+    }
+}
+@media (width > 560px) {
+    .header-home {
+        height: 200px;
+    }
+
+    .header-home .title {
+        font-size: 32px;
+    }
+}
+
+@media (width <= 560px) {
+    .header-home {
+        width: 85vw;
+        height: auto;
+    }
+}
+
